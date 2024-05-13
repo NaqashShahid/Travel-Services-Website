@@ -3,7 +3,14 @@
     margin: 0;
     box-sizing: border-box;
     border: none;
-    font-family: popins;
+    font-family: "Quicksand", sans-serif;
+}
+
+:root {
+    --Nav-font-size: 16px;
+    --Nav-font-weight: 600;
+    --Nav-font-letr-space: 0.1px;
+    --btn-border-radius: 8px;
 }
 
 
@@ -11,17 +18,22 @@
 
 nav {
     width: 100vw;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.60),rgba(0,0,0,0.60)), url(images/hero-1\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .nav-container {
-    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0 80px;
 
     .logo {
         display: flex;
         align-items: center;
+        gap: 10px;
 
         .logo-name {
             font-family: "Poetsen One", sans-serif;
@@ -38,15 +50,35 @@ nav {
     .menu-wrap {
         ul {
             display: flex;
+            align-items: center;
             list-style: none;
 
-            li{
-                font-size: ;
+            .menu-list {
+                font-size: var(--Nav-font-size);
+                font-weight: var(--Nav-font-weight);
+                letter-spacing: var(--Nav-font-letr-space);
+                padding: 0 16px;
             }
 
             .menu-link {
                 text-decoration: none;
+                color: rgb(255, 255, 255);
             }
         }
+    }
+
+    #active-page {
+        padding: 10px;
+        background-color: #F78536;
+        border-radius: var(--btn-border-radius);
+    }
+    #btn-online-border{
+        border: 2px solid #F78536;
+        padding: 10px;
+        border-radius: var(--btn-border-radius);
+    }
+
+    @media screen {
+        
     }
 }
