@@ -18,7 +18,7 @@
 
 nav {
     width: 100vw;
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.60),rgba(0,0,0,0.60)), url(images/hero-1\ \(1\).jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(images/hero-1\ \(1\).jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@ nav {
         }
     }
 
-    .menu{
+    .menu {
         display: grid;
         place-items: center;
     }
@@ -59,17 +59,18 @@ nav {
             list-style: none;
 
             .menu-list {
+
                 font-size: var(--Nav-font-size);
                 font-weight: var(--Nav-font-weight);
                 letter-spacing: var(--Nav-font-letr-space);
-                padding: 0 16px;
                 vertical-align: middle;
                 text-align: center;
+                padding: 0 16px;
             }
 
             .menu-link {
                 text-decoration: none;
-                color: rgb(255, 255, 255);
+                color: #fff;
             }
         }
     }
@@ -79,29 +80,45 @@ nav {
         background-color: #F78536;
         border-radius: var(--btn-border-radius);
     }
-    #btn-online-border{
+
+    #btn-online-border {
         border: 2px solid #F78536;
         padding: 8px;
         border-radius: var(--btn-border-radius);
     }
 }
 
- @media screen and (max-width: 1023px) {
-    .menu .menu-list{
-        padding: 0px 0px;
-        vertical-align: middle;
+.menu-wrap{
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (max-width: 992px) {
+    /* .nav-container{
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .menu .menu-link {
-        font-size: 14px;
-        vertical-align: middle;
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    } */
+
+    .menu-wrap .menu li {
+        font-size: 10px !important;
+        padding:  0 8px;
     }
 
-    #active-page a{
-        padding:0px;
-        background-color: black;
+    #active-page {
+        padding: 4px;
+        background-color: #F78536;
+        border-radius: var(--btn-border-radius);
     }
-    #btn-online-bo.menu-linkder a{
-        padding:0px;
+
+    #btn-online-border {
+        border: 2px solid #F78536;
+        padding: 4px;
+        border-radius: var(--btn-border-radius);
     }
-} 
+}
