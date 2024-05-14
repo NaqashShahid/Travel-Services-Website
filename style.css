@@ -31,8 +31,11 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 80px;
-    padding: 20px 10px;
+    /* margin: 0 80px; */
+    padding: 20px 90px;
+    background-color: rgba(0, 0, 0, 0.60);
+    transition: top 0.3s;
+
 
     .logo {
         display: flex;
@@ -155,6 +158,24 @@ nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+}
+.card-1{
+    background-image: url();
+}
+.card-2{
+    background-image: url();
+}
+.card-3{
+    background-image: url();
+}
+.card-4{
+    background-image: url();
+}
+.card-5{
+    background-image: url();
+}
+.card-6{
+    background-image: url();
 }
 
 /* Media Quries */
