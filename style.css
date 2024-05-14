@@ -27,6 +27,7 @@ nav {
 
 .nav-container {
     position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -143,6 +144,19 @@ nav {
     color: #fff;
 }
 
+/* places */
+.places{
+    width: 100vw;
+}
+.places-container{
+    display: flex;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
 /* Media Quries */
 
 @media screen and (max-width: 992px) {
@@ -207,23 +221,24 @@ nav {
         border-radius: 50px 20px 50px 25px;
         margin-bottom: 20px;
     }
+
     .hero-content {
         width: 100%;
         justify-content: center;
         text-align: center;
         padding: 0;
     }
+
     .hero-content-container h1 {
         font-size: 20px;
     }
+
     .hero-content p {
         width: 100%;
         font-size: 14px;
         font-weight: 400;
         line-height: 18px;
     }
-    
-
 }
 
 @media screen and (max-width: 576px) {
@@ -248,9 +263,11 @@ nav {
     .hero-content {
         padding-right: 10px;
     }
+
     .hero-content-container h1 {
         font-size: 16px;
     }
+
     .hero-content p {
         font-size: 12px;
         font-weight: 500;
