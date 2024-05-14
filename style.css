@@ -29,6 +29,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     margin: 0 80px;
+    padding: 20px 10px;
 
     .logo {
         display: flex;
@@ -88,65 +89,21 @@ nav {
     }
 }
 
-.menu-wrap{
-    position: relative;
-    z-index: 1;
-}
 
-.menu-wrap input{
-    position: absolute;
-    width: 40px;
-    z-index: 2;
-    cursor: pointer;
-    opacity: 0;
-    -webkit-touch-callout: none;
-}
-.menu-wrap span{
-    display: block;
-    position: relative;
-    background-color: #cdcdcd;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    border-radius: 3px;
-    z-index: 1;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-                background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-    transform-origin: 4px 0px;
-}
-.menu-wrap span:first-child{
-    transform-origin: 0% 0%;
-}
-.menu-wrap span:nth-last-child(2){
-    transform-origin: 0% 100%;
-}
-.menu-wrap input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
-  }
-.menu-wrap input:checked ~ span:nth-last-child(2) {
-    transform: rotate(-45deg) translate(0, -1px);
-  }
-.menu-wrap input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-
-/* @media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .nav-container{
         flex-direction: column;
-        align-items: flex-start;
+        /* align-items: flex-start; */
     }
 
     .menu{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
     }
 
     .menu-wrap .menu li {
-        font-size: 10px !important;
+        font-size: 14px !important;
         padding:  0 8px;
     }
 
@@ -161,4 +118,32 @@ nav {
         padding: 4px;
         border-radius: var(--btn-border-radius);
     }
-} */
+}
+
+@media screen and (max-width: 768px){
+    .menu-wrap .menu li {
+        font-size: 12px !important;
+        padding:  0 6px !important;
+    }
+
+    #active-page {
+        padding: 4px !important;
+        border-radius: 0.01px;
+    }
+
+    #btn-online-border {
+        border: 2px solid #F78536;
+        padding: 4px !important;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .menu{
+        flex-direction: column !important;
+        margin-top: 5px;
+    }
+    .menu li{
+        margin-top: 5px;
+    }
+}
