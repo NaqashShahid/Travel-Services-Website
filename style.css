@@ -152,30 +152,67 @@ nav {
 /* -----------places----------- */
 
 
-.places{
+.places {
     /* width: 100vw; */
     background-color: #e9f8fb;
 }
-.places-container{
+
+.places-container {
     display: flex;
     gap: 100px;
     margin: 0 90px;
 }
-.card-container{
+
+.card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 355px 355px 355px 355px;
+    grid-template-rows: 300px 300px 300px 300px;
     gap: 20px;
 }
-.card bg{
-    align-items:flex-start;
+
+.card-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    padding-bottom: 30px;
 }
-.p-c-col-r h1{
+
+.card-bg p {
+    color: #fff !important;
+    font-weight: 700 !important;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.card-bg button {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding: 8px;
+    color: #fff;
+    background-color: #F78536;
+    border-radius: var(--btn-border-radius);
+    vertical-align: middle;
+    text-align: center;
+    display: flex;
+    align-items: end;
+    font-weight: var(--Nav-font-weight);
+}
+
+.material-symbols-outlined {
+    font-size: 16px;
+    font-weight: 500;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.p-c-col-r h1 {
     font-size: 30px;
     text-align: center;
     color: #F78536;
     margin-bottom: 20px;
 }
+
 .p-c-col-r p {
     font-size: var(--Nav-font-size);
     font-weight: 600;
@@ -184,50 +221,120 @@ nav {
     text-align: center;
     margin-bottom: 20px;
 }
-.p-c-col-l ul{
+
+.card-1 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/card\ 1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.card-2 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/card\ 2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.card-3 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/card\ 3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.card-4 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/card\ 4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.card-5 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/card\ 5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.card-6 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/card\ 6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.p-c-col-r {
+    margin-top: 40px;
+}
+
+.p-c-col-l {
+    width: 500px;
+    margin-top: 40px;
+}
+
+.p-c-col-l h1 {
+    margin-bottom: 26px;
+    color: #F78536;
+    text-wrap: nowrap;
+}
+
+.p-c-col-l ul {
     list-style: none;
 }
-.p-c-col-l ul li a{
+
+.p-c-col-l ul li {
+    margin-bottom: 20px;
+}
+
+.p-c-col-l ul li a {
     text-decoration: none;
     font-size: var(--Nav-font-size);
     font-weight: var(--Nav-font-weight);
     letter-spacing: var(--Nav-font-letr-space);
 }
 
-.card-1{
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(images/card\ 1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height:auto;
-}
-.card-2{
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(images/card\ 2.jpg);
-    width: 100%;
-    height:auto;
-}
-.card-3{
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(images/card\ 3.jpg);
-    width: 100%;
-    height:auto;
-}
-.card-4{
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(images/card\ 4.jpg);
-    width: 100%;
-    height:auto;
-}
-.card-5{
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(images/card\ 5.jpg);
-    width: 100%;
-    height:auto;
-}
-.card-6{
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(images/);
-    width: 100%;
-    height:auto;
+/* Media Quries */
+
+@media screen and (max-width: 1212px) {
+    .card-container {
+        grid-template-rows: 250px 250px 250px 250px;
+    }
+    .card-bg p {
+        margin-bottom: 05px;
+        margin-left: 10px;
+        text-align: start;
+    }
+    .card-bg button {
+        margin-bottom: 05px;
+        margin-left: 10px;
+        text-wrap: nowrap;
+    }
 }
 
-/* Media Quries */
+@media screen and (max-width: 1024px){
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 300px 300px 300px;
+        gap: 20px;
+    }
+    .p-c-col-l {
+        width: 400px;
+    }
+}
 
 @media screen and (max-width: 992px) {
     .nav-container {
@@ -263,6 +370,21 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+    .p-c-col-l ul {
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        align-items: center;
+        text-wrap: nowrap;
+    }
+    .p-c-col-l ul li{
+        margin-right: 20px;
+    }
+    .places-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0 90px;
+    }
     .menu-wrap .menu li {
         font-size: 12px !important;
         padding: 0 6px !important;
@@ -312,6 +434,20 @@ nav {
 }
 
 @media screen and (max-width: 576px) {
+    .places-container {
+        display: flex;
+        gap: 100px;
+        margin: 0 20px;
+    }
+    .p-c-col-l {
+        width: 100%;
+    }
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 200px 200px 200px 200px 200px 200px;
+        gap: 20px;
+    }
     .menu {
         flex-direction: column !important;
         margin-top: 5px;
